@@ -1,0 +1,130 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+  font-family: "Roboto", sans-serif;
+
+  .footerContent {
+    margin: 0.5rem auto auto auto;
+
+    width: 69rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .footerLogoData {
+      display: flex;
+      align-items: center;
+      //   justify-content: center;
+      margin-left: 4.5rem;
+
+      .footerLogoImg {
+        margin: 0;
+      }
+
+      .footerLogoCompany {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .footerLogoCaption {
+        font-size: 1.1rem;
+      }
+
+      .footerLogo {
+        width: 2.6rem;
+        height: 3rem;
+        margin-right: 0.5rem;
+      }
+
+      .footerData {
+        font-size: 1.2rem;
+      }
+    }
+
+    .footerSocialMidiaInfo {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+      margin-right: 5rem;
+      width: 23rem;
+      // width:
+      .footerSocialMidiaItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .footerSocialMidia {
+          width: 30px;
+          height: 30px;
+          margin-right: 1rem;
+        }
+        .footerSocialMidiaInfo {
+          display: flex;
+          font-size: 1.2rem;
+          align-items: center;
+        }
+
+        .footerSocialMediaText {
+          margin-right: 0.5rem;
+        }
+
+        @mixin footerIcon {
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+          margin-top: 0.2rem;
+        }
+        .footerFacebookIcon {
+          @include footerIcon;
+
+          color: var(--color-facebook);
+        }
+        .footerTwitterIcon {
+          @include footerIcon;
+
+          color: var(--color-twitter);
+        }
+      }
+
+      .footerInterpunct {
+        color: var(--color-gray-300);
+        cursor: default;
+        margin-left: 0.5rem;
+        margin-top: 0.1rem;
+      }
+    }
+  }
+
+  .footerOthers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    .footerInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 11rem;
+      margin-left: -0.2rem;
+    }
+    .footerOthersInfo {
+      font-size: 1.2rem;
+    }
+
+    .footerLink {
+      color: var(--color-primary);
+      cursor: pointer;
+      margin-left: 0.6rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .footerCopyright {
+      color: var(--color-gray-200);
+      font-size: 0.9rem;
+    }
+  }
+}
