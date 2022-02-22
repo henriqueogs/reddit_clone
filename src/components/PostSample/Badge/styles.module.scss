@@ -1,0 +1,32 @@
+@mixin postCategory {
+    color: var(--color-white);
+    border-radius: 5rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+  }
+  
+    //categorias
+    .product_design {
+      @include postCategory;
+  
+      background-color: var(--color-badge-green);
+    }
+  
+    .ux_ui {
+      @include postCategory;
+  
+      background-color: var(--color-badge-blue);
+    }
+  
+    .discussion {
+      @include postCategory;
+  
+      background-color: var(--color-badge-purple);
+    }
+  
+    .case_study {
+        @include postCategory;
+  
+        background-color: var(--color-badge-yellow);
+    }
+  

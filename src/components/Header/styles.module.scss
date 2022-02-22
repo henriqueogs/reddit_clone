@@ -1,0 +1,80 @@
+.headerContainer {
+    width: 100%;
+    top: 0;
+    height: 5rem;
+    position: fixed;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+  .headerLogo {
+    width: 2.6rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+  .headerVerticalLine{
+    width: 1px;
+    height: 50%;
+    background-color:  var(--color-tertiary-light);
+    margin-right: 1rem;
+  }
+  .headerContent {
+    // width: 1280px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerInputContainer {
+    display: flex;
+    width: 23rem;
+    height: 3rem;
+    background-color:  var(--color-tertiary-light);
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    .searchInput {
+      border: none;
+      width: 100%;
+      height: auto;
+      outline: none;
+      font-size: 1.2rem;
+      background-color: var(--color-tertiary-light);
+      border-end-end-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+    }
+    .headerInputIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem 1rem ;
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--color-tertiary);
+      // border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .headerNotificationBadge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.3rem;
+    height: 1.3rem;
+    color: var(--color-white);
+    position: relative;
+    background-color: var(--color-primary);
+    border-radius: 0.2rem;
+    margin-right: -1.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .headerAvatar{
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
